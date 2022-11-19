@@ -10,14 +10,11 @@
 import javax.swing.*;
 public class InputMerk2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         String input;
         input = JOptionPane.showInputDialog("Masukan Harga : ");
-        long harga = Integer.valueOf(input);
-        JOptionPane.showInputDialog(harga);
+        long harga = Integer.valueOf(input).intValue();
+        JOptionPane.showMessageDialog(null, harga);
     }
     
 }
